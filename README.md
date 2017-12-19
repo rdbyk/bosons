@@ -8,7 +8,7 @@
 - `atomsRepositorList()` will return a list of available repositories
 - `atomsRepositoryAdd('https://raw.githubusercontent.com/rdbyk/balisc/master')` will add the _**Bosons**_ repository
 
-(Hint: In case ATOMS related problems, make sure that your that your _Edit | Preferences | Web | Proxy settings_ are correct.)
+(Hint: In case of ATOMS related problems, make sure that your that your _Edit | Preferences | Web | Proxy settings_ are correct.)
 
 ### List / Install / Remove Toolboxes
 - use the commands `atomsList` / `atomsInstall` / `atomsRemove`,
