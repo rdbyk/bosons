@@ -3,13 +3,13 @@
 - provides some **precompiled Toolboxes** for **Linux 64bit only**
 
 ## How to use it?
-### Setup
+#### Setup
 - `atomsRepositoryList()` will return a list of available repositories
-- `atomsRepositoryAdd('https://raw.githubusercontent.com/rdbyk/bosons/master')` will add the _**Bosons**_ repository
+- `atomsRepositoryAdd('https://raw.githubusercontent.com/rdbyk/bosons/master')` will add the _**Bosons**_ to the list of available repositories
 
 (Hint: In case of ATOMS related problems, make sure that your that your _Edit | Preferences | Web | Proxy settings_ are correct.)
 
-### List / Install / Remove Toolboxes
+#### List / Install / Remove Toolboxes
 - use the commands `atomsList` / `atomsInstall` / `atomsRemove`,
 - or the _Applications | Modules Manager - ATOMS_ with GUI
 
