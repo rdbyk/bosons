@@ -1,0 +1,140 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Set</title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	<span class="previous"><a href="Reshape.html">&lt;&lt; Reshape</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_90ec9bd027c80763d8658ffd83e12bc0.html">SYMSCI Toolbox</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="Sign.html">Sign &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">SYMSCI Toolbox</a> &gt;&gt; <a href="section_90ec9bd027c80763d8658ffd83e12bc0.html">SYMSCI Toolbox</a> &gt; Set</span>
+
+    <br /><br />
+    <div class="refnamediv"><h1 class="refname">Set</h1>
+    <p class="refpurpose">create a symbolic set</p></div>
+  <div class="refsynopsisdiv"><h3 class="title">Calling Sequence</h3>
+    <div class="synopsis"><pre><span class="default">S</span><span class="default"> = </span><span class="functionid">Set</span><span class="default">()</span>
+<span class="default">S</span><span class="default"> = </span><span class="functionid">Set</span><span class="default">( </span><span class="default">a</span><span class="default"> )</span></pre></div></div>
+  <div class="refsection"><h3 class="title">Arguments</h3>
+    <dl><dt><span class="term">a</span>
+        <dd><p class="para">symbolic, double, or integer matrix, or symbolic set</p></dd></dt>
+      <dt><span class="term">S</span>
+        <dd><p class="para">symbolic set</p></dd></dt></dl></div>
+  <div class="refsection"><h3 class="title">Description</h3>
+    <p class="para">Creates a <em>symbolic set</em> <span class="term">S</span>. The elements
+		of symbolic sets are symbolic scalars (cf. <a href="Sym.html" class="link">Sym</a>).</p>
+    <dl><dt><span class="term">Set()</span>
+        <dd><p class="para"></p>
+          <p class="para">Returns an empty set.</p>
+          <p class="para"></p></dd></dt>
+      <dt><span class="term">Set( a )</span>
+        <dd><p class="para"></p>
+		  <p class="para">Returns a set with the elements of a matrix or vector <span class="term">a</span>.</p>
+          <p class="para"></p></dd></dt></dl></div>
+  <div class="refsection"><h3 class="title">Extracting Elements</h3>
+    <dl><dt><span class="term">A(i)</span>
+        <dd><p class="para"></p>
+          <p class="para">Returns the <span class="term">i</span>-th element of <span class="term">A</span> specified
+            by a scalar integer index <span class="term">i</span>.</p>
+          <p class="para"></p>
+          <p class="para">Returns a subset of <span class="term">A</span>
+            specified by a vector <span class="term">i</span> of integer indices.</p>
+          <p class="para"></p></dd></dt>
+      <dt><span class="term">A( B )</span>
+        <dd><p class="para"></p>
+		  <p class="para">Returns the set of elements which are members of
+            <span class="term">A</span> <em>and</em> <span class="term">B</span>.</p>
+          <p class="para"></p>
+          <p class="para">Please note, if <span class="term">B</span> is a symbolic scalar
+			(cf. <a href="Sym.html" class="link">Sym</a>), then it is interpreted
+			as a set with just one element.</p>
+          <p class="para"></p></dd></dt></dl></div>
+  <div class="refsection"><h3 class="title">Inserting Elements</h3>
+    <dl><dt><span class="term">A( B ) = C</span>
+        <dd><p class="para"></p>
+          <p class="para">Removes all elements of set <span class="term">B</span> from <span class="term">A</span>
+            and then inserts all elements of set <span class="term">C</span> into <span class="term">A</span>.</p>
+          <p class="para"></p>
+          <p class="para">Please note, if the empty matrix <span class="term">[]</span> is used for
+            <span class="term">B</span> or <span class="term">C</span>, then it is interpreted as
+            an empty set.</p>
+          <p class="para"></p></dd></dt></dl></div>
+  <div class="refsection"><h3 class="title">Examples</h3>
+    <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// create empty sets</span>
+<span class="scilabid">R</span> <span class="scilaboperator">=</span> <span class="scilabid">Set</span><span class="scilabopenclose">(</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">S</span> <span class="scilaboperator">=</span> <span class="scilabid">Set</span><span class="scilabopenclose">(</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+
+<span class="scilabcomment">// add elements to S</span>
+<span class="scilabid">S</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">5</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">S</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">1.23</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">S</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">y</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">S</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">x+x</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span>
+
+<span class="scilabcomment">// add elements to R</span>
+<span class="scilabid">R</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">x</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">R</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">5</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">R</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">2*y</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span>
+
+<span class="scilabcomment">// Difference </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">D = S \ R</span><span class="scilabcomment">&#0034;</span>
+<span class="scilabid">D</span><span class="scilaboperator">=</span><span class="scilabid">S</span><span class="scilabdefault">;</span>
+<span class="scilabid">D</span><span class="scilabopenclose">(</span><span class="scilabid">R</span><span class="scilabopenclose">)</span><span class="scilaboperator">=</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span>
+
+<span class="scilabcomment">// Union </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">U = S or R</span><span class="scilabcomment">&#0034;</span>
+<span class="scilabid">U</span><span class="scilaboperator">=</span><span class="scilabid">S</span><span class="scilabdefault">;</span>
+<span class="scilabid">U</span><span class="scilabopenclose">(</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabopenclose">)</span><span class="scilaboperator">=</span><span class="scilabid">R</span>
+
+<span class="scilabcomment">// Intersection </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">I = S and R</span><span class="scilabcomment">&#0034;</span>
+<span class="scilabid">I</span><span class="scilaboperator">=</span><span class="scilabid">R</span><span class="scilabopenclose">(</span><span class="scilabid">S</span><span class="scilabopenclose">)</span> <span class="scilabcomment">// or I=S(R)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+  <div class="refsection"><h3 class="title">See Also</h3>
+    <ul class="itemizedlist"><li class="member"><a href="Sym.html" class="link">Sym</a></li>
+      <li class="member"><a href="Vec.html" class="link">Vec</a></li>
+      <li class="member"><a href="Mat.html" class="link">Mat</a></li></ul></div>
+  <div class="refsection"><h3 class="title">Authors</h3>
+    <ul class="itemizedlist"><li class="member">Dirk Reusch, <a href="http://www.kybdr.de" class="ulink">Kybernetik Dr. Reusch</a></li></ul></div>
+  <div class="refsection"><h3 class="title">Bibliography</h3>
+       <p class="para"><a href="https://github.com/symengine/symengine" class="ulink">SymEngine</a>: C++ library for fast symbolic manipulation.</p></div>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	<span class="previous"><a href="Reshape.html">&lt;&lt; Reshape</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_90ec9bd027c80763d8658ffd83e12bc0.html">SYMSCI Toolbox</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="Sign.html">Sign &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>

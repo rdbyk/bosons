@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+<toc version="1.0">
+<tocitem target="index" text="SYMSCI Toolbox">
+<tocitem target="section_90ec9bd027c80763d8658ffd83e12bc0" text="SYMSCI Toolbox">
+<tocitem target="Abs" text="Abs"/>
+<tocitem target="Acos" text="Acos"/>
+<tocitem target="Add" text="Add"/>
+<tocitem target="Asin" text="Asin"/>
+<tocitem target="Atan" text="Atan"/>
+<tocitem target="Cos" text="Cos"/>
+<tocitem target="Det" text="Det"/>
+<tocitem target="Diag" text="Diag"/>
+<tocitem target="Diff" text="Diff"/>
+<tocitem target="Div" text="Div"/>
+<tocitem target="DivElem" text="DivElem"/>
+<tocitem target="Evalf" text="Evalf"/>
+<tocitem target="Exp" text="Exp"/>
+<tocitem target="Expand" text="Expand"/>
+<tocitem target="Eye" text="Eye"/>
+<tocitem target="Fraction" text="Fraction"/>
+<tocitem target="FreeSymbols" text="FreeSymbols"/>
+<tocitem target="GetArgs" text="GetArgs"/>
+<tocitem target="HCat" text="HCat"/>
+<tocitem target="Imag" text="Imag"/>
+<tocitem target="Inv" text="Inv"/>
+<tocitem target="LUSolve" text="LUSolve"/>
+<tocitem target="Log" text="Log"/>
+<tocitem target="Mat" text="Mat"/>
+<tocitem target="Mul" text="Mul"/>
+<tocitem target="MulElem" text="MulElem"/>
+<tocitem target="Neg" text="Neg"/>
+<tocitem target="Ones" text="Ones"/>
+<tocitem target="Pow" text="Pow"/>
+<tocitem target="Real" text="Real"/>
+<tocitem target="Reshape" text="Reshape"/>
+<tocitem target="Set" text="Set"/>
+<tocitem target="Sign" text="Sign"/>
+<tocitem target="Sin" text="Sin"/>
+<tocitem target="Sqrt" text="Sqrt"/>
+<tocitem target="Sub" text="Sub"/>
+<tocitem target="Subs" text="Subs"/>
+<tocitem target="Sym" text="Sym"/>
+<tocitem target="Syms" text="Syms"/>
+<tocitem target="Tan" text="Tan"/>
+<tocitem target="Transpose" text="Transpose"/>
+<tocitem target="VCat" text="VCat"/>
+<tocitem target="Vec" text="Vec"/>
+<tocitem target="Zeros" text="Zeros"/>
+<tocitem target="cols" text="cols"/>
+<tocitem target="elems" text="elems"/>
+<tocitem target="getVersion" text="getVersion"/>
+<tocitem target="isEqual" text="isEqual"/>
+<tocitem target="isMatrix" text="isMatrix"/>
+<tocitem target="isNotEqual" text="isNotEqual"/>
+<tocitem target="isNumber" text="isNumber"/>
+<tocitem target="isScalar" text="isScalar"/>
+<tocitem target="isSym" text="isSym"/>
+<tocitem target="isVector" text="isVector"/>
+<tocitem target="rows" text="rows"/>
+<tocitem target="toDouble" text="toDouble"/>
+<tocitem target="toSciCode" text="toSciCode"/>
+<tocitem target="toSciFunction" text="toSciFunction"/>
+<tocitem target="toString" text="toString"/>
+<tocitem target="typeClass" text="typeClass"/>
+<tocitem target="typeId" text="typeId"/>
+</tocitem>
+</tocitem>
+</toc>

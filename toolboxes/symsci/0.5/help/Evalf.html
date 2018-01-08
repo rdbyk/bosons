@@ -1,0 +1,94 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Evalf</title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	<span class="previous"><a href="DivElem.html">&lt;&lt; DivElem</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_90ec9bd027c80763d8658ffd83e12bc0.html">SYMSCI Toolbox</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="Exp.html">Exp &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">SYMSCI Toolbox</a> &gt;&gt; <a href="section_90ec9bd027c80763d8658ffd83e12bc0.html">SYMSCI Toolbox</a> &gt; Evalf</span>
+
+    <br /><br />
+    <div class="refnamediv"><h1 class="refname">Evalf</h1>
+    <p class="refpurpose">evalute to arbitrary precision float</p></div>
+  <div class="refsynopsisdiv"><h3 class="title">Syntax</h3>
+    <div class="synopsis"><pre><span class="default">f</span><span class="default"> = </span><span class="functionid">Evalf</span><span class="default">( </span><span class="default">a</span><span class="default">, </span><span class="default">bits</span><span class="default">, </span><span class="default">real</span><span class="default"> = </span><span class="default">%t</span><span class="default"> )</span></pre></div></div>
+  <div class="refsection"><h3 class="title">Arguments</h3>
+    <dl><dt><span class="term">a</span>
+        <dd><p class="para">symbolic</p></dd></dt>
+      <dt><span class="term">bits</span>
+        <dd><p class="para">non-negative integer</p></dd></dt>
+            <dt><span class="term">real</span>
+        <dd><p class="para">boolean</p></dd></dt>
+      <dt><span class="term">f</span>
+        <dd><p class="para">symbolic</p></dd></dt></dl></div>
+  <div class="refsection"><h3 class="title">Description</h3>
+    <p class="para">Evaluates a number <span class="term">a</span> to a floating
+		point number <span class="term">f</span> with arbitrary precision.</p>
+    <p class="para">The number of significant <span class="term">bits</span> specifies the precision.
+		For <span class="term">bits</span>&lt;=53 always standard <em>double</em>
+		precision is used.</p>
+    <p class="para">The flag <span class="term">real</span> specifies whether the number
+        <span class="term">a</span> is real (<span class="term">%t</span>) or complex (<span class="term">%f</span>).</p></div>
+  <div class="refsection"><h3 class="title">Examples</h3>
+    <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// create some numbers</span>
+<span class="scilabid">pi</span>    <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">pi</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+<span class="scilabid">sqrt2</span> <span class="scilaboperator">=</span> <span class="scilabid">Sym</span><span class="scilabopenclose">(</span><span class="scilabstring">&#0034;</span><span class="scilabstring">sqrt(-2)</span><span class="scilabstring">&#0034;</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
+
+<span class="scilabcomment">// evalute to float with 60 decimal digits of precision,</span>
+<span class="scilabcomment">// thus we use ceil(60*(log(10)/log(2))) = 200 bits of precision</span>
+<span class="scilabid">Evalf</span><span class="scilabopenclose">(</span> <span class="scilabid">pi</span><span class="scilabdefault">,</span> <span class="scilabnumber">200</span> <span class="scilabopenclose">)</span>
+<span class="scilabid">Evalf</span><span class="scilabopenclose">(</span> <span class="scilabid">sqrt2</span><span class="scilabdefault">,</span> <span class="scilabnumber">200</span><span class="scilabdefault">,</span> <span class="scilabconstants">%f</span> <span class="scilabopenclose">)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+  <div class="refsection"><h3 class="title">See Also</h3>
+    <ul class="itemizedlist"><li class="member"><a href="toDouble.html" class="link">toDouble</a></li>
+      <li class="member"><a href="toString.html" class="link">toString</a></li></ul></div>
+  <div class="refsection"><h3 class="title">Authors</h3>
+    <ul class="itemizedlist"><li class="member">Dirk Reusch, <a href="http://www.kybdr.de" class="ulink">Kybernetik Dr. Reusch</a></li></ul></div>
+  <div class="refsection"><h3 class="title">Bibliography</h3>
+       <p class="para"><a href="https://github.com/symengine/symengine" class="ulink">SymEngine</a>: C++ library for fast symbolic manipulation.</p></div>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	<span class="previous"><a href="DivElem.html">&lt;&lt; DivElem</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_90ec9bd027c80763d8658ffd83e12bc0.html">SYMSCI Toolbox</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="Exp.html">Exp &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>
