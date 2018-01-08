@@ -17,7 +17,7 @@
 - [_**SYMSCI**_ - Symbolic Math Toolbox for Scilab (Version 0.5)](http://www.kybdr.de/software#symbolic_math_toolbox_for_scilab)
 
   The _**SYMSCI Toolbox**_ provides (currently) very basic capabilities for _**symbolic arithmetic**_ and _**differentiation**_,
-and _**arbitrary precision floating point**_ calculations (cf. [Help Pages](https://raw.githubusercontent.com/rdbyk/bosons/mastertoolboxes/symsci/0.5/help/index.html))
+and _**arbitrary precision floating point**_ calculations (cf. [Help Pages](https://raw.githubusercontent.com/rdbyk/bosons/master/toolboxes/symsci/0.5/help/index.html))
 
   Under the hood works the MIT/BSD licensed C++ libary [SymEngine](https://github.com/symengine/symengine).
 SymEngine itself needs the following LGPL licensed GNU libraries: [GMP](https://gmplib.org/), [MPFR](http://www.mpfr.org/), and [MPC](http://www.multiprecision.org/).
